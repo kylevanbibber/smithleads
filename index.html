@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase Mailer Leads</title>
+    <title>Mailer Leads</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,52 +11,58 @@
             margin: 0;
             padding: 0;
         }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #555;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background-color: #444;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 1000px;
+            margin: 20px auto;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        h1, h2 {
-            text-align: center;
+        .content {
+            margin-bottom: 20px;
+        }
+        .content h2 {
             color: #333;
         }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        .content p {
+            color: #555;
+            line-height: 1.6;
         }
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        textarea {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        textarea {
-            resize: vertical;
-        }
-        button {
-            background-color: #28a745;
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
             color: white;
-            padding: 10px;
-            border: none;
+            background-color: #28a745;
+            text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        button:hover {
+        .btn:hover {
             background-color: #218838;
         }
         .footer {
@@ -69,27 +75,38 @@
 </head>
 <body>
 
+<header class="header">
+    <h1>Mailer Leads Inc.</h1>
+</header>
+
+<nav class="navbar">
+    <div class="logo">Mailer Leads</div>
+    <div>
+        <a href="#purchase">Purchase</a>
+        <a href="#login">Login</a>
+    </div>
+</nav>
+
 <div class="container">
-    <h1>Purchase Mailer Leads</h1>
-    <p>Please fill out the form below to purchase mailer leads for your business. Our team will contact you shortly with the next steps.</p>
-    <form>
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section class="content">
+        <h2>About Our Company</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+    <section class="content">
+        <h2>Our Program</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
 
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" required>
+    <section class="content">
+        <h2>Types of Leads</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
 
-        <label for="quantity">Number of Leads:</label>
-        <input type="number" id="quantity" name="quantity" min="1" required>
-
-        <label for="message">Additional Information:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Enter any specific requirements or questions here..."></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
+    <section class="content">
+        <a href="#purchase" class="btn">Purchase Leads</a>
+    </section>
 </div>
 
 <div class="footer">
